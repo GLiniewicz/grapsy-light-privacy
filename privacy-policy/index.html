@@ -43,7 +43,7 @@
       }
 
       main {
-        width: min(1160px, calc(100% - 32px));
+        width: min(1480px, calc(100% - 32px));
         margin: 0 auto;
         padding: 30px 0 64px;
       }
@@ -85,7 +85,7 @@
       }
 
       .subtitle {
-        max-width: 72ch;
+        max-width: 80ch;
         color: var(--muted);
         line-height: 1.7;
         font-size: 1.02rem;
@@ -93,7 +93,7 @@
 
       .hero-grid {
         display: grid;
-        grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.8fr);
+        grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.8fr);
         gap: 24px;
         align-items: end;
       }
@@ -145,7 +145,7 @@
 
       .content {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 0;
       }
 
@@ -227,8 +227,7 @@
         color: var(--accent);
       }
 
-      @media (max-width: 920px) {
-        .hero-grid,
+      @media (max-width: 1120px) {
         .content {
           grid-template-columns: 1fr;
         }
@@ -239,9 +238,15 @@
         }
       }
 
+      @media (max-width: 920px) {
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
       @media (max-width: 700px) {
         main {
-          width: min(100% - 18px, 1160px);
+          width: min(100% - 18px, 1480px);
           padding-top: 14px;
         }
 
@@ -273,11 +278,13 @@
               <p class="subtitle">
                 Public privacy information for the Grapsy Light Android application. This page is
                 intended for users and for Google Play listing compliance. Grapsy Light is a paid,
-                subscription-based shopping app without accounts, ads, or geolocation.
+                subscription-based shopping app focused on local shopping data, optional local
+                backup, and a shared read-only promotions catalog for Poland and Germany.
               </p>
               <nav class="nav" aria-label="Language navigation">
                 <a href="#pl">Polski</a>
                 <a href="#en">English</a>
+                <a href="#de">Deutsch</a>
                 <a href="mailto:grzegorz.liniewicz@gmail.com">grzegorz.liniewicz@gmail.com</a>
               </nav>
             </div>
@@ -286,8 +293,11 @@
               <ul>
                 <li>No account creation or login.</li>
                 <li>No ads and no geolocation.</li>
-                <li>Shopping lists, saved templates, pantry data, and alerts stay on the device.</li>
-                <li>Promotions catalog is fetched remotely in read-only mode.</li>
+                <li>Shopping lists, pantry data, alerts, and region preferences stay on the device.</li>
+                <li>
+                  The shared promotions catalog for Poland and Germany is downloaded in read-only
+                  mode; filtering, search, and alert matching are handled locally.
+                </li>
                 <li>Payments and subscription renewals are handled by Google Play.</li>
               </ul>
             </aside>
@@ -305,8 +315,8 @@
               <h3>Administrator i kontakt</h3>
               <p>
                 Operatorem aplikacji Grapsy Light jest MKT Grzegorz Liniewicz, Parkowa 59,
-                05-074 Halinow, Polska, NIP 5372503705, REGON 382856854. W sprawach prywatności
-                i działania aplikacji można kontaktować się pod adresem
+                05-074 Halinów, Polska, NIP 5372503705, REGON 382856854. W sprawach prywatności i
+                działania aplikacji można kontaktować się pod adresem
                 <a href="mailto:grzegorz.liniewicz@gmail.com">grzegorz.liniewicz@gmail.com</a>.
               </p>
             </section>
@@ -315,9 +325,11 @@
               <h3>Zakres aplikacji</h3>
               <p>
                 Grapsy Light służy do prowadzenia lokalnych list zakupowych, zapisywania szablonów
-                list, historii zakupów, danych spiżarni oraz alertów promocyjnych. Aplikacja pobiera
-                również zdalny katalog promocji w trybie tylko do odczytu. Pełny dostęp do aplikacji jest oferowany jako miesięczna
-                subskrypcja Google Play.
+                list, historii zakupów, danych spiżarni oraz alertów promocyjnych. Aplikacja
+                pobiera również wspólny katalog promocji dla Polski i Niemiec w trybie tylko do
+                odczytu. Wybór regionu, filtrowanie sklepów, wyszukiwanie, sortowanie i dopasowanie
+                alertów odbywają się lokalnie na urządzeniu. Pełny dostęp do aplikacji jest
+                oferowany jako miesięczna subskrypcja Google Play.
               </p>
             </section>
 
@@ -328,46 +340,46 @@
                 <li>zapisane szablony list i ich produkty,</li>
                 <li>dane spiżarni i historia ukończonych list,</li>
                 <li>zapisane alerty promocyjne,</li>
-                <li>część ustawień aplikacji i preferencji powiadomień.</li>
+                <li>wybrane regiony, część filtrów sklepów oraz część ustawień aplikacji i powiadomień.</li>
               </ul>
-              <p>
-                Dane te są co do zasady przechowywane lokalnie na urządzeniu użytkownika.
-              </p>
+              <p>Dane te są co do zasady przechowywane lokalnie na urządzeniu użytkownika.</p>
             </section>
 
             <section>
               <h3>Jakie dane mogą być przetwarzane zdalnie</h3>
               <p>
-                Aby dostarczyć katalog promocji oraz utrzymać bezpieczeństwo i niezawodność usługi,
-                infrastruktura operatora lub jego dostawców technicznych może przetwarzać minimalne
-                dane techniczne związane z połączeniem, takie jak logi zadania, podstawowe metadane
-                sieciowe oraz informacje niezbędne do dostarczenia treści.
+                Aby dostarczyć wspólny katalog promocji oraz utrzymać bezpieczeństwo i
+                niezawodność usługi, infrastruktura operatora lub jego dostawców technicznych może
+                przetwarzać minimalne dane techniczne związane z połączeniem, takie jak logi
+                usługi, podstawowe metadane sieciowe oraz informacje niezbędne do dostarczenia
+                treści.
               </p>
             </section>
 
             <section>
               <h3>Płatności i subskrypcja</h3>
               <p>
-                 Dostęp do aplikacji jest sprzedawany przez Google Play. Google Play obsługuje zakup,
-                 okres próbny, odnowienia, anulowanie, zwroty oraz dane płatnicze, w tym dane karty,
-                 zgodnie z własnymi zasadami. Operator nie otrzymuje pełnych danych płatniczych
-                 użytkownika. Aplikacja może lokalnie zapisać identyfikator produktu subskrypcji,
-                 identyfikator zakupu przekazany przez Google Play oraz czas ostatniej udanej
-                 weryfikacji wyłącznie w celu sprawdzenia dostępu do funkcji premium i utrzymania
-                 krótkiego dostępu offline. Taki lokalny cache jest usuwany po stwierdzeniu braku
-                 aktywnej subskrypcji, a w trybie offline może być wykorzystywany maksymalnie przez
-                 72 godziny od ostatniej udanej weryfikacji. Użytkownik może usunąć te dane szybciej
-                 przez wyczyszczenie danych aplikacji lub odinstalowanie aplikacji.
+                Dostęp do aplikacji jest sprzedawany przez Google Play. Google Play obsługuje
+                zakup, okres próbny, odnowienia, anulowanie, zwroty oraz dane płatnicze, w tym
+                dane karty, zgodnie z własnymi zasadami. Operator nie otrzymuje pełnych danych
+                płatniczych użytkownika. Aplikacja może lokalnie zapisać identyfikator produktu
+                subskrypcji, identyfikator zakupu przekazany przez Google Play oraz czas ostatniej
+                udanej weryfikacji wyłącznie w celu sprawdzenia dostępu do funkcji premium i
+                utrzymania krótkiego dostępu offline. Taki lokalny cache jest usuwany po
+                stwierdzeniu braku aktywnej subskrypcji, a w trybie offline może być wykorzystywany
+                maksymalnie przez 72 godziny od ostatniej udanej weryfikacji. Użytkownik może
+                usunąć te dane szybciej przez wyczyszczenie danych aplikacji lub odinstalowanie
+                aplikacji.
               </p>
             </section>
 
             <section>
               <h3>Backup, import i eksport</h3>
               <p>
-                Aplikacja udostępnia opcjonalny lokalny import i eksport kopii danych przez systemowy
-                wybór pliku lub zapis do pliku. Kopia może zawierać lokalne listy, zapisane szablony,
-                dane spiżarni, alerty, historię oraz część ustawień. Operator nie udostępnia w
-                aktualnym zakresie synchronizacji chmurowej tych danych.
+                Aplikacja udostępnia opcjonalny lokalny import i eksport kopii danych przez
+                systemowy wybór pliku lub zapis do pliku. Kopia może zawierać lokalne listy,
+                zapisane szablony, dane spiżarni, alerty, historię oraz część ustawień. Operator
+                nie udostępnia w aktualnym zakresie synchronizacji chmurowej tych danych.
               </p>
             </section>
 
@@ -386,16 +398,17 @@
               <h3>Powiadomienia</h3>
               <p>
                 Powiadomienia promocyjne mają charakter lokalny i wynikają z ustawień zapisanych na
-                urządzeniu. Użytkownik może ograniczyć zakres informacji widocznych na ekranie blokady.
+                urządzeniu oraz z pobranego katalogu promocji. Użytkownik może ograniczyć zakres
+                informacji widocznych na ekranie blokady.
               </p>
             </section>
 
             <section>
               <h3>Usunięcie danych</h3>
               <p>
-                Dane zapisane lokalnie mozna usunac przez wyczyszczenie danych aplikacji,
-                odinstalowanie aplikacji lub usuniecie zapisanych plikow kopii danych utworzonych
-                przez uzytkownika.
+                Dane zapisane lokalnie można usunąć przez wyczyszczenie danych aplikacji,
+                odinstalowanie aplikacji lub usunięcie zapisanych plików kopii danych utworzonych
+                przez użytkownika.
               </p>
             </section>
 
@@ -428,9 +441,11 @@
               <h3>Application scope</h3>
               <p>
                 Grapsy Light is used for local shopping lists, saved list templates, pantry data,
-                shopping history, and promotion alert management. The app also downloads a remote
-                promotions catalog in read-only mode.
-                Full access to the app is sold as a monthly Google Play subscription.
+                shopping history, and promotion alert management. The app also downloads a shared
+                remote promotions catalog for Poland and Germany in read-only mode. Region
+                selection, store filtering, search, sorting, and alert matching are handled locally
+                on the device. Full access to the app is sold as a monthly Google Play
+                subscription.
               </p>
             </section>
 
@@ -441,35 +456,33 @@
                 <li>saved list templates and their products,</li>
                 <li>pantry data and completed-list history,</li>
                 <li>saved promotion alerts,</li>
-                <li>part of the application settings and notification preferences.</li>
+                <li>selected regions, part of store filters, and part of the app and notification settings.</li>
               </ul>
-              <p>
-                These data are intended to stay locally on the user's device.
-              </p>
+              <p>These data are intended to stay locally on the user's device.</p>
             </section>
 
             <section>
               <h3>Data that may be processed remotely</h3>
               <p>
-                To deliver the promotions catalog and maintain service security and reliability, the
-                Operator's infrastructure or its technical providers may process minimal technical
-                connection data such as service logs, basic network metadata, and information needed
-                to deliver content.
+                To deliver the shared promotions catalog and maintain service security and
+                reliability, the Operator's infrastructure or its technical providers may process
+                minimal technical connection data such as service logs, basic network metadata, and
+                information needed to deliver content.
               </p>
             </section>
 
             <section>
               <h3>Payments and subscription</h3>
               <p>
-                 Access to the app is sold through Google Play. Google Play handles the purchase,
-                 free trial, renewals, cancellation, refunds, and payment card data under its own
-                 policies. The Operator does not receive the user's full payment card details. The
-                 app may locally store the subscription product identifier, the purchase identifier
-                 provided by Google Play, and the time of the last successful verification solely to
-                 verify access to premium features and maintain short offline access. This local
-                 cache is cleared when no active subscription is found, and in offline mode it may
-                 be used for up to 72 hours from the last successful verification. The user can
-                 remove these data earlier by clearing app data or uninstalling the app.
+                Access to the app is sold through Google Play. Google Play handles the purchase,
+                free trial, renewals, cancellation, refunds, and payment card data under its own
+                policies. The Operator does not receive the user's full payment card details. The
+                app may locally store the subscription product identifier, the purchase identifier
+                provided by Google Play, and the time of the last successful verification solely to
+                verify access to premium features and maintain short offline access. This local
+                cache is cleared when no active subscription is found, and in offline mode it may
+                be used for up to 72 hours from the last successful verification. The user can
+                remove these data earlier by clearing app data or uninstalling the app.
               </p>
             </section>
 
@@ -497,8 +510,9 @@
             <section>
               <h3>Notifications</h3>
               <p>
-                Promotion notifications are local and depend on the settings saved on the device.
-                Users can limit what is shown on the lock screen.
+                Promotion notifications are local and depend on the settings saved on the device
+                and on the downloaded promotions catalog. Users can limit what is shown on the lock
+                screen.
               </p>
             </section>
 
@@ -513,15 +527,134 @@
             <section>
               <h3>Policy updates</h3>
               <p>
-                This policy may be updated if the application's functional scope, delivery model, or
-                legal requirements change.
+                This policy may be updated if the application's functional scope, delivery model,
+                or legal requirements change.
+              </p>
+            </section>
+          </article>
+
+          <article class="lang" id="de" lang="de">
+            <div class="lang-header">
+              <h2>Datenschutzerklärung</h2>
+              <span class="lang-tag">DE</span>
+            </div>
+
+            <section class="panel">
+              <h3>Verantwortlicher und Kontakt</h3>
+              <p>
+                Grapsy Light wird von MKT Grzegorz Liniewicz, Parkowa 59, 05-074 Halinow, Polen,
+                Steuer-ID 5372503705, REGON 382856854 betrieben. Fragen zum Datenschutz und zum
+                Betrieb der App k&ouml;nnen an
+                <a href="mailto:grzegorz.liniewicz@gmail.com">grzegorz.liniewicz@gmail.com</a>
+                gesendet werden.
+              </p>
+            </section>
+
+            <section>
+              <h3>Funktionsumfang der App</h3>
+              <p>
+                Grapsy Light dient zur lokalen Verwaltung von Einkaufslisten, gespeicherten
+                Listenvorlagen, Vorratsdaten, Einkaufshistorie und Rabattalarmen. Die App l&auml;dt
+                au&szlig;erdem einen gemeinsamen Remote-Promotionskatalog f&uuml;r Polen und
+                Deutschland im schreibgesch&uuml;tzten Modus. Regionsauswahl, Shop-Filter, Suche,
+                Sortierung und Alert-Abgleich erfolgen lokal auf dem Ger&auml;t. Der volle Zugriff
+                auf die App wird als monatliches Google-Play-Abonnement verkauft.
+              </p>
+            </section>
+
+            <section>
+              <h3>Lokal verarbeitete Daten</h3>
+              <ul>
+                <li>Einkaufslisten und ihr Status,</li>
+                <li>gespeicherte Listenvorlagen und ihre Produkte,</li>
+                <li>Vorratsdaten und Verlauf abgeschlossener Listen,</li>
+                <li>gespeicherte Rabattalarme,</li>
+                <li>ausgew&auml;hlte Regionen, Teile der Shop-Filter sowie Teile der App- und Benachrichtigungseinstellungen.</li>
+              </ul>
+              <p>Diese Daten sollen grunds&auml;tzlich lokal auf dem Ger&auml;t des Nutzers bleiben.</p>
+            </section>
+
+            <section>
+              <h3>Daten, die remote verarbeitet werden k&ouml;nnen</h3>
+              <p>
+                Um den gemeinsamen Promotionskatalog bereitzustellen und die Sicherheit sowie
+                Zuverl&auml;ssigkeit des Dienstes zu gew&auml;hrleisten, k&ouml;nnen die
+                Infrastruktur des Betreibers oder seine technischen Anbieter minimale technische
+                Verbindungsdaten verarbeiten, etwa Dienstprotokolle, grundlegende Netzwerkmetadaten
+                und Informationen, die zur Auslieferung der Inhalte erforderlich sind.
+              </p>
+            </section>
+
+            <section>
+              <h3>Zahlungen und Abonnement</h3>
+              <p>
+                Der Zugriff auf die App wird &uuml;ber Google Play verkauft. Google Play verwaltet
+                Kauf, Probezeit, Verl&auml;ngerungen, K&uuml;ndigung, Erstattungen und
+                Zahlungsdaten einschlie&szlig;lich Kartendaten nach seinen eigenen Richtlinien. Der
+                Betreiber erh&auml;lt nicht die vollst&auml;ndigen Kartendaten des Nutzers. Die App
+                kann lokal die Produktkennung des Abonnements, die von Google Play bereitgestellte
+                Kaufkennung und den Zeitpunkt der letzten erfolgreichen Verifizierung speichern,
+                ausschlie&szlig;lich um den Zugriff auf Premium-Funktionen zu pr&uuml;fen und einen
+                kurzen Offline-Zugriff zu erm&ouml;glichen. Dieser lokale Cache wird gel&ouml;scht,
+                wenn kein aktives Abonnement mehr festgestellt wird. Im Offline-Modus kann er bis
+                zu 72 Stunden nach der letzten erfolgreichen Verifizierung verwendet werden. Der
+                Nutzer kann diese Daten fr&uuml;her entfernen, indem er die App-Daten l&ouml;scht
+                oder die App deinstalliert.
+              </p>
+            </section>
+
+            <section>
+              <h3>Backup, Import und Export</h3>
+              <p>
+                Die App unterst&uuml;tzt einen optionalen lokalen Import und Export von
+                Datensicherungen &uuml;ber den System-Dateiauswahldialog oder den System-Speicherdialog.
+                Eine Sicherung kann lokale Listen, gespeicherte Vorlagen, Vorratsdaten, Alarme,
+                Verlauf und Teile der App-Einstellungen enthalten. Im aktuellen Umfang bietet der
+                Betreiber keine Cloud-Synchronisierung f&uuml;r diese Daten an.
+              </p>
+            </section>
+
+            <section>
+              <h3>Was die App nicht macht</h3>
+              <ul>
+                <li>sie erstellt keine Benutzerkonten und verlangt keinen Login,</li>
+                <li>sie verwendet keine Werbung oder Werbe-IDs,</li>
+                <li>sie nutzt keine Geolokalisierung,</li>
+                <li>sie bietet kein Teilen von Listen an,</li>
+                <li>sie enth&auml;lt kein Kontaktformular in der App.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3>Benachrichtigungen</h3>
+              <p>
+                Promotionsbenachrichtigungen sind lokal und h&auml;ngen von den auf dem Ger&auml;t
+                gespeicherten Einstellungen sowie vom heruntergeladenen Promotionskatalog ab.
+                Nutzer k&ouml;nnen einschr&auml;nken, welche Informationen auf dem Sperrbildschirm
+                angezeigt werden.
+              </p>
+            </section>
+
+            <section>
+              <h3>L&ouml;schen von Daten</h3>
+              <p>
+                Lokal gespeicherte Daten k&ouml;nnen entfernt werden, indem die App-Daten gel&ouml;scht,
+                die App deinstalliert oder die vom Nutzer erstellten Backup-Dateien entfernt werden.
+              </p>
+            </section>
+
+            <section>
+              <h3>Aktualisierungen der Richtlinie</h3>
+              <p>
+                Diese Richtlinie kann aktualisiert werden, wenn sich der Funktionsumfang der App,
+                das Betriebsmodell oder rechtliche Anforderungen &auml;ndern.
               </p>
             </section>
           </article>
         </div>
 
         <footer class="footer">
-          <div>Last updated: 2026-05-04</div>
+          <div>Last updated: 2026-07-09</div>
           <div>
             <a class="back-link" href="../">Back to site root</a>
           </div>
