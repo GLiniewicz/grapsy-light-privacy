@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grapsy Light - Legal Notice / Impressum</title>
+    <meta
+      name="description"
+      content="Legal notice (Impressum) for the operator of the Grapsy Light Android application and this website."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #efe5d2;
+        --paper: rgba(255, 252, 247, 0.94);
+        --paper-strong: rgba(255, 255, 255, 0.98);
+        --ink: #1d1d1a;
+        --muted: #5f594d;
+        --line: rgba(29, 29, 26, 0.12);
+        --accent: #0f7b63;
+        --accent-soft: rgba(15, 123, 99, 0.12);
+        --warm: #b45d1f;
+        --shadow: 0 22px 60px rgba(44, 28, 8, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(15, 123, 99, 0.14), transparent 32%),
+          radial-gradient(circle at 100% 0%, rgba(180, 93, 31, 0.16), transparent 24%),
+          linear-gradient(180deg, #f7f1e5 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(1480px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 30px 0 64px;
+      }
+
+      .shell {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 30px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .hero {
+        padding: 38px 38px 30px;
+        background:
+          linear-gradient(135deg, rgba(15, 123, 99, 0.1), transparent 56%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0));
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 16px 0 14px;
+        font-size: clamp(2.2rem, 5vw, 3.6rem);
+        line-height: 0.98;
+      }
+
+      .subtitle {
+        max-width: 80ch;
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 1.02rem;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 15px;
+        border-radius: 14px;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--ink);
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid var(--line);
+      }
+
+      .nav a:hover {
+        background: #fff;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0;
+      }
+
+      .lang {
+        padding: 30px 32px 34px;
+      }
+
+      .lang + .lang {
+        border-left: 1px solid var(--line);
+      }
+
+      .lang-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 18px;
+      }
+
+      .lang h2 {
+        margin: 0;
+        font-size: 1.55rem;
+      }
+
+      .lang-tag {
+        color: var(--warm);
+        font-weight: 800;
+        font-size: 0.9rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      dl {
+        margin: 0;
+        padding: 18px 18px 4px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--line);
+      }
+
+      dt {
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      dd {
+        margin: 4px 0 16px;
+        color: var(--ink);
+        line-height: 1.6;
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.72;
+        margin: 18px 0 0;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .footer {
+        padding: 22px 32px 28px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px 20px;
+        color: var(--muted);
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 15px;
+        border-radius: 14px;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--ink);
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid var(--line);
+      }
+
+      .back-link:hover {
+        background: #fff;
+      }
+
+      @media (max-width: 1120px) {
+        .content {
+          grid-template-columns: 1fr;
+        }
+
+        .lang + .lang {
+          border-left: 0;
+          border-top: 1px solid var(--line);
+        }
+      }
+
+      @media (max-width: 700px) {
+        main {
+          width: min(100% - 18px, 1480px);
+          padding-top: 14px;
+        }
+
+        .shell {
+          border-radius: 22px;
+        }
+
+        .hero,
+        .lang,
+        .footer {
+          padding-left: 22px;
+          padding-right: 22px;
+        }
+
+        .hero {
+          padding-top: 26px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="shell">
+        <header class="hero">
+          <div class="eyebrow">Legal Notice</div>
+          <h1>Grapsy Light</h1>
+          <p class="subtitle">
+            Operator identification for the Grapsy Light Android application and this website,
+            required under Polish and German law (art. 5 ustawy o świadczeniu usług drogą
+            elektroniczną / § 5 DDG).
+          </p>
+          <nav class="nav" aria-label="Language navigation">
+            <a href="#pl">Polski</a>
+            <a href="#en">English</a>
+            <a href="#de">Deutsch</a>
+            <a href="mailto:grzegorz.liniewicz@gmail.com">grzegorz.liniewicz@gmail.com</a>
+          </nav>
+        </header>
+
+        <div class="content">
+          <article class="lang" id="pl" lang="pl">
+            <div class="lang-header">
+              <h2>Nota prawna (Impressum)</h2>
+              <span class="lang-tag">PL</span>
+            </div>
+
+            <dl>
+              <dt>Operator</dt>
+              <dd>MKT Grzegorz Liniewicz</dd>
+
+              <dt>Forma prawna</dt>
+              <dd>Jednoosobowa działalność gospodarcza wpisana do Centralnej Ewidencji i Informacji o Działalności Gospodarczej (CEIDG) Rzeczypospolitej Polskiej</dd>
+
+              <dt>Adres</dt>
+              <dd>Parkowa 59, 05-074 Halinów, Polska</dd>
+
+              <dt>NIP</dt>
+              <dd>5372503705</dd>
+
+              <dt>REGON</dt>
+              <dd>382856854</dd>
+
+              <dt>Kontakt</dt>
+              <dd><a href="mailto:grzegorz.liniewicz@gmail.com">grzegorz.liniewicz@gmail.com</a></dd>
+
+              <dt>Osoba odpowiedzialna za treść</dt>
+              <dd>Grzegorz Liniewicz (adres jak wyżej)</dd>
+            </dl>
+
+            <p>
+              Niniejsza strona oraz Regulamin i Polityka prywatności aplikacji Grapsy Light
+              podlegają prawu polskiemu. Szczegóły dotyczące przetwarzania danych opisuje
+              <a href="../privacy-policy/#pl">Polityka prywatności</a>.
+            </p>
+          </article>
+
+          <article class="lang" id="en" lang="en">
+            <div class="lang-header">
+              <h2>Legal Notice</h2>
+              <span class="lang-tag">EN</span>
+            </div>
+
+            <dl>
+              <dt>Operator</dt>
+              <dd>MKT Grzegorz Liniewicz</dd>
+
+              <dt>Legal form</dt>
+              <dd>Sole proprietorship registered in the Central Registration and Information on Business (CEIDG) of the Republic of Poland</dd>
+
+              <dt>Address</dt>
+              <dd>Parkowa 59, 05-074 Halinow, Poland</dd>
+
+              <dt>Tax ID (NIP)</dt>
+              <dd>5372503705</dd>
+
+              <dt>REGON</dt>
+              <dd>382856854</dd>
+
+              <dt>Contact</dt>
+              <dd><a href="mailto:grzegorz.liniewicz@gmail.com">grzegorz.liniewicz@gmail.com</a></dd>
+
+              <dt>Person responsible for content</dt>
+              <dd>Grzegorz Liniewicz (address as above)</dd>
+            </dl>
+
+            <p>
+              This website and the Grapsy Light Terms and Conditions and Privacy Policy are
+              governed by Polish law. See the
+              <a href="../privacy-policy/#en">Privacy Policy</a> for details on data processing.
+            </p>
+          </article>
+
+          <article class="lang" id="de" lang="de">
+            <div class="lang-header">
+              <h2>Impressum</h2>
+              <span class="lang-tag">DE</span>
+            </div>
+
+            <dl>
+              <dt>Angaben gem&auml;&szlig;</dt>
+              <dd>§ 5 DDG (Digitale-Dienste-Gesetz)</dd>
+
+              <dt>Betreiber</dt>
+              <dd>MKT Grzegorz Liniewicz</dd>
+
+              <dt>Rechtsform</dt>
+              <dd>Einzelunternehmen, eingetragen im polnischen Zentralregister f&uuml;r Wirtschaftst&auml;tigkeit (CEIDG)</dd>
+
+              <dt>Anschrift</dt>
+              <dd>Parkowa 59, 05-074 Halinow, Polen</dd>
+
+              <dt>Steuer-ID (NIP)</dt>
+              <dd>5372503705</dd>
+
+              <dt>REGON</dt>
+              <dd>382856854</dd>
+
+              <dt>Kontakt</dt>
+              <dd><a href="mailto:grzegorz.liniewicz@gmail.com">grzegorz.liniewicz@gmail.com</a></dd>
+
+              <dt>Inhaltlich Verantwortlicher</dt>
+              <dd>Grzegorz Liniewicz (Anschrift wie oben)</dd>
+            </dl>
+
+            <p>
+              Diese Website sowie die Nutzungsbedingungen und Datenschutzerkl&auml;rung von
+              Grapsy Light unterliegen polnischem Recht. Details zur Datenverarbeitung finden
+              Sie in der <a href="../privacy-policy/#de">Datenschutzerkl&auml;rung</a>.
+            </p>
+          </article>
+        </div>
+
+        <footer class="footer">
+          <div>Last updated: 2026-08-03</div>
+          <div>
+            <a class="back-link" href="../">Back to site root</a>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
